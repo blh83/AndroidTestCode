@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VaroMovie</string>
+
+    <string name="get_movies">Get Movies</string>
+    <string name="title_error">Error retrieving title</string>
+    <string name="show_favorites">Show/Hide Favorites</string>
+    <string name="show_all">Show All</string>
+    <string name="movie_popularity">Popularity: %1$s</string>
+    <string name="movie_release_date">Released: %1$s</string>
+    <string name="show_my_favorites">Show my favorites</string>
+    <string name="transition_name">detail transition</string>
+
+    <!-- ACTION BAR -->
+    <string name="action_favorite">Favorites</string>
+    <string name="action_search">Search</string>
+</resources>

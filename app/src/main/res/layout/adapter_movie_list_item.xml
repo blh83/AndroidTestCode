@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="@drawable/movie_card_outline"
+                                             android:layout_margin="4dp"
+                                             android:padding="2dp"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <ImageView
+     android:id="@+id/moviePoster"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintBottom_toTopOf="@id/movieTitle"
+     android:background="@drawable/generic_image"
+     android:transitionName="@string/transition_name"
+     />
+
+ <ImageView
+     android:id="@+id/favoriteHeart"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintEnd_toEndOf="@id/moviePoster"
+     app:layout_constraintTop_toTopOf="@id/moviePoster"
+     android:layout_marginEnd="20dp"
+     android:layout_marginTop="20dp"
+     android:src="@drawable/ic_favorite_border"
+     />
+
+ <TextView
+     android:id="@+id/movieTitle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     tools:text = "Brandon Movie"
+     android:textSize="16sp"
+     android:textColor="@color/darkGray"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/moviePoster"
+     android:layout_marginStart="5dp"
+     android:layout_marginTop="10dp"
+     />
+
+ <TextView
+     android:id="@+id/movieRating"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:drawableEnd="@drawable/ic_star_rate"
+     android:drawablePadding="3dp"
+     android:text="5.6"
+     app:layout_constraintTop_toBottomOf="@id/movieTitle"
+     app:layout_constraintStart_toStartOf="@id/movieTitle"
+     android:layout_marginTop="5dp"
+     android:layout_marginEnd="5dp"
+     />
+
+ <TextView
+     android:id="@+id/movieReleaseDate"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@id/movieRating"
+     app:layout_constraintStart_toStartOf="@id/movieRating"
+     android:layout_marginTop="5dp"
+     tools:text="10/20/2005"
+     />
+
+ <ImageView
+     android:id="@+id/movieDetails"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/movieRating"
+     android:layout_marginEnd="2dp"
+     android:src="@drawable/ic_more"
+     />
+
+</android.support.constraint.ConstraintLayout>
